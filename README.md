@@ -27,3 +27,6 @@ https://davien21.github.io/simple-form/
 
 ## Backend is live at:   
 https://simple-form-api.herokuapp.com/api/
+
+## API Documentation:
+https://documenter.getpostman.com/view/9823092/TVspjouu
