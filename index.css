@@ -1,0 +1,59 @@
+main {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #4c5866;
+  color: rgb(214, 209, 209);
+}
+
+header {
+  background-color: #808080;
+  height: 30px;
+  padding: auto;
+  text-align: center;
+}
+
+section {
+  background-color: rgb(39, 39, 41);
+  padding: 20px 20px;
+  margin: auto;
+}
+
+div {
+  margin-top: 10px;
+}
+
+.textField {
+  width: 100%;
+  background-color: #808080;
+  color: gainsboro;
+  border-radius: 20px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-style: none;
+}
+::placeholder {
+  color: rgb(190, 185, 185);
+}
+
+#signUpButton {
+  background-color: rgb(4, 70, 133);
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+footer {
+  text-align: center;
+}
+
+#signInButton {
+  background-color: #808080;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
