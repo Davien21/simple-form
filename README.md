@@ -25,5 +25,5 @@ You may get email notifications about them, but it's better to watch the repo to
 ## Website is Live at:   
 https://davien21.github.io/simple-form/
 
-## Backend ia live at:   
+## Backend is live at:   
 https://simple-form-api.herokuapp.com/api/
