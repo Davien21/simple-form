@@ -1,5 +1,4 @@
-fetch(
-  "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits"
-)
-  .then((response) => response.json())
-  .then((commits) => console.log(commits));
+let response = fetch("https://simple-form-api.herokuapp.com/api/users");
+let data = response.json();
+
+console.log(data);
