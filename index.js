@@ -1,9 +1,5 @@
-// Chidi has a big head
-
-function printChidisHead(head) {
-  return `I am Chidi and I have a big ${head}`;
-}
-
-const chidiHeadSize = printChidisHead("head");
-
-alert(chidiHeadSize);
+fetch(
+  "https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits"
+)
+  .then((response) => response.json())
+  .then((commits) => console.log(commits));
