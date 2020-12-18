@@ -1,13 +1,16 @@
-// Chidi has a big head
-// FirstName, LastName, Gender, Email, Password
-// Will recieve token
+let Data;
 
+fetch("https://simple-form-api.herokuapp.com/api/users")
+  .then((response) => response.json())
+  .then((data) => (Data = data[0]));
 
+console.log(Data);
 
-function printChidisHead(head) {
-  return `I am Chidi and I have a big ${head}`;
+const tableHeader = document.querySelector(".table-head");
+const headerChildren = tableHeader.children;
+
+console.log(headerChildren);
+
+for (i = 0; i < headerChildren.length; i++) {
+  headerChildren[i].style.color = "red";
 }
-
-const chidiHeadSize = printChidisHead("head");
-
-alert(chidiHeadSize);
