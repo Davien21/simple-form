@@ -4,40 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
-    crossorigin="anonymous" />
+  <title>Bling Employment Form</title>
+  <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
-  <table class="ui celled table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Job</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td data-label="Name">James</td>
-        <td data-label="Age">24</td>
-        <td data-label="Job">Engineer</td>
-      </tr>
-      <tr>
-        <td data-label="Name">Jill</td>
-        <td data-label="Age">26</td>
-        <td data-label="Job">Engineer</td>
-      </tr>
-      <tr>
-        <td data-label="Name">Elyse</td>
-        <td data-label="Age">24</td>
-        <td data-label="Job">Designer</td>
-      </tr>
-    </tbody>
-  </table>
+
+  <main>
+    <header>
+      <h3> Application Form For Blingers</h3>
+    </header>
+    <section>
+      <form>
+        <div>
+          <label for="Firstname">First Name</label> <br />
+          <input type="text" placeholder="First Name" name="Firstname" class="textField">
+        </div>
+
+        <div>
+          <label for="Lastname">Last Name</label> <br />
+          <input type="text" placeholder="Last Name" name="Lastname" class="textField">
+        </div>
+
+        <div>
+          <label for="email">Email</label> <br />
+          <input type="text" placeholder="Email" name="email" class="textField">
+        </div>
+        <p>Please select</p>
+
+        <div>
+          <input type="radio" value="Female" name="gender">
+          <label for="gender">Female</label>
+        </div>
+
+        <div>
+          <input type="radio" value="Male" name="gender">
+          <label for="gender`">Male</label>
+        </div>
+
+        <div>
+          <input type="radio" value="Not Specified" name="gender">
+          <label for="gender">Not Specified</label>
+        </div>
+
+        <div>
+          <label for="password">Password</label> <br />
+          <input type="password" placeholder="Password" name="password" class="textField">
+        </div>
+
+        <div>
+          <label for="confirmPassword">Confirm Password</label><br />
+          <input type="text" placeholder="Confirm Password" name="confirmPassword" class="textField">
+        </div>
+
+
+      </form>
+      <button id="signUpButton"> SignUp </button>
+      <footer>
+        <p> Already have an account?</p>
+        <button id="signInButton">Sign In</button>
+      </footer>
+
+    </section>
+  </main>
+
 </body>
-<script src="index.js"></script>
 
 </html>
