@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bling Employment Form</title>
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
-  <h2>
-    Hi Guys: Alex and Elliot
-  </h2>
+    
+    <main>
+        <header >
+            <h3> Application Form For Blingers</h3>
+        </header>
+        <section>
+            <form>
+                <div>
+                    <label for="Firstname">First Name</label> <br/>
+                    <input type="text" placeholder="First Name" name="Firstname"class="textField">
+                </div>
+
+                <div>
+                    <label for="Lastname">Last Name</label> <br/>
+                    <input type="text" placeholder="Last Name" name="Lastname"class="textField">
+                </div>
+
+                <div>
+                    <label for="email">Email</label> <br/>
+                    <input type="text" placeholder="Email" name="email" class="textField">
+                </div>
+                <p>Please select</p>
+
+                <div>
+                    <input type="radio" value="Female" name="gender">
+                    <label for="gender">Female</label>
+                </div>
+
+                <div>
+                    <input type="radio" value="Male" name="gender">
+                    <label for="gender`">Male</label>
+                </div>
+
+                 <div>
+                    <input type="radio" value="Not Specified" name="gender">
+                    <label for="gender">Not Specified</label>
+                </div>
+
+                <div>
+                    <label for="password">Password</label> <br/>
+                    <input type="password" placeholder="Password" name="password" class="textField">
+                </div>
+
+                <div>
+                     <label for="confirmPassword">Confirm Password</label><br/>
+                     <input type="text" placeholder="Confirm Password" name="confirmPassword" class="textField">
+                </div>
+
+               
+            </form>
+              <button id="signUpButton"> SignUp </button>
+            <footer>
+                <p> Already have an account?</p>
+                <button  id="signInButton">Sign In</button>
+            </footer>
+
+        </section>
+    </main>
+   
 </body>
 </html>
