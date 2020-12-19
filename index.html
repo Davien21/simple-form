@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
-    crossorigin="anonymous" /> -->
-</head>
-
-<body>
-  <table class="ui celled table">
-    <thead id='user-headers'>
-      <tr class="table-head">
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Gender</th>
-        <th>Email</th>
-        <th>Password</th>
-      </tr>
-    </thead>
-    <tbody id="user-details">
-      <tr>
-        <td>Yibaebi</td>
-        <td>Elliot</td>
-        <td>Male</td>
-        <td>e.yibaebi@genesystechhub.com</td>
-        <td>0000000</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
-<script src="index.js"></script>
-
+  <body>
+    <table class="ui celled table">
+      <thead id="user-headers">
+        <tr id="table-head">
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody id="user-details"></tbody>
+    </table>
+  </body>
+  <script src="index.js"></script>
 </html>
