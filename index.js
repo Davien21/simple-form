@@ -5,6 +5,8 @@ function append(parent, child) {
   return parent.appendChild(child);
 }
 
+function handleSubmit() {}
+
 const URL = "https://simple-form-api.herokuapp.com/api/users";
 let userDetails = document.getElementById("user-details");
 

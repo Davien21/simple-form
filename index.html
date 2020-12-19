@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bling Employment Form</title>
+    <link href="index.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
@@ -11,17 +12,86 @@
       crossorigin="anonymous"
     />
   </head>
-
   <body>
-    <table class="ui celled table">
-      <thead id="user-headers">
-        <tr id="table-head">
-          <th>First Name</th>
-          <th>Last Name</th>
-        </tr>
-      </thead>
-      <tbody id="user-details"></tbody>
-    </table>
+    <main>
+      <header>
+        <h3>Application Form For Blingers</h3>
+      </header>
+      <section>
+        <form method="POST" onsubmit="handleSubmit()">
+          <div>
+            <label for="Firstname">First Name</label> <br />
+            <input
+              type="text"
+              placeholder="First Name"
+              name="Firstname"
+              class="textField"
+            />
+          </div>
+
+          <div>
+            <label for="Lastname">Last Name</label> <br />
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="Lastname"
+              class="textField"
+            />
+          </div>
+
+          <div>
+            <label for="email">Email</label> <br />
+            <input
+              type="text"
+              placeholder="Email"
+              name="email"
+              class="textField"
+            />
+          </div>
+          <p>Please select</p>
+
+          <div>
+            <input type="radio" value="Female" name="gender" />
+            <label for="gender">Female</label>
+          </div>
+
+          <div>
+            <input type="radio" value="Male" name="gender" />
+            <label for="gender`">Male</label>
+          </div>
+
+          <div>
+            <input type="radio" value="Not Specified" name="gender" />
+            <label for="gender">Not Specified</label>
+          </div>
+
+          <div>
+            <label for="password">Password</label> <br />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              class="textField"
+            />
+          </div>
+
+          <div>
+            <label for="confirmPassword">Confirm Password</label><br />
+            <input
+              type="text"
+              placeholder="Confirm Password"
+              name="confirmPassword"
+              class="textField"
+            />
+          </div>
+
+          <button type="submit" id="signUpButton">SignUp</button>
+
+          <p>Already have an account?</p>
+          <button type="submit" id="signInButton">Sign In</button>
+        </form>
+      </section>
+    </main>
+    <script src="index.js"></script>
   </body>
-  <script src="index.js"></script>
 </html>
