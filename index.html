@@ -18,80 +18,72 @@
         <h3>Application Form For Blingers</h3>
       </header>
       <section>
-        <form method="POST" onsubmit="handleSubmit()">
-          <div>
-            <label for="Firstname">First Name</label> <br />
+        <form id="form">
+          <fieldset>
+            <legend>Biodata</legend>
+            <label for="Firstname">First Name</label>
             <input
               type="text"
               placeholder="First Name"
-              name="Firstname"
+              name="firstname"
               class="textField"
-            />
-          </div>
-
-          <div>
-            <label for="Lastname">Last Name</label> <br />
+              id="formFirstName"
+            /><br /><br /><label for="Lastname">Last Name</label>
             <input
               type="text"
               placeholder="Last Name"
-              name="Lastname"
+              name="lastname"
               class="textField"
-            />
-          </div>
-
-          <div>
-            <label for="email">Email</label> <br />
+              id="formLastName"
+            /><br /><br /><label for="email">Email</label>
             <input
               type="text"
               placeholder="Email"
               name="email"
               class="textField"
-            />
-          </div>
-          <p>Please select</p>
-
-          <div>
+              id="formEmail"
+            /><br /><br />
+          </fieldset>
+          <fieldset>
+            <legend>Please select you gender</legend>
             <input type="radio" value="Female" name="gender" />
             <label for="gender">Female</label>
-          </div>
-
-          <div>
+            <br />
             <input type="radio" value="Male" name="gender" />
-            <label for="gender`">Male</label>
-          </div>
-
-          <div>
+            <label for="gender">Male</label>
+            <br />
             <input type="radio" value="Not Specified" name="gender" />
             <label for="gender">Not Specified</label>
-          </div>
+          </fieldset>
 
-          <div>
-            <label for="password">Password</label> <br />
+          <fieldset>
+            <legend>Password</legend>
+            <label for="password">New Password</label> <br />
             <input
               type="password"
               placeholder="Password"
               name="password"
               class="textField"
-            />
-          </div>
-
-          <div>
-            <label for="confirmPassword">Confirm Password</label><br />
+              id="newPassword"
+            /><br /><br /><label for="confirmPassword">Confirm Password</label
+            ><br />
             <input
-              type="text"
+              type="password"
               placeholder="Confirm Password"
               name="confirmPassword"
               class="textField"
+              id="confirmPassword"
             />
-          </div>
-
-          <button type="submit" id="signUpButton">SignUp</button>
+          </fieldset>
+          <button type="submit" id="signUpButton">Sign Up</button>
 
           <p>Already have an account?</p>
-          <button type="submit" id="signInButton">Sign In</button>
+          <button type="button" onclick="userDashBoard()" id="signInButton">
+            Sign In
+          </button>
         </form>
       </section>
     </main>
-    <script src="index.js"></script>
   </body>
+  <script src="index.js"></script>
 </html>
